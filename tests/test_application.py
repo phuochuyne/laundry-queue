@@ -1,0 +1,15 @@
+"""Whole-application smoke tests."""
+
+from backend import create_app
+
+
+def test_health_endpoint():
+    app = create_app(testing=True)
+    response = app.test_client().get("/health")
+    assert response.status_code == 200
+    assert response.get_json()["ok"] is True
+
+
+def test_expected_function_inventory_is_frozen():
+    expected = ('capability_view_machine_status_589af8dc.function.list_machines_by_building', 'capability_view_machine_status_589af8dc.function.update_machine_status', 'capability_view_machine_status_589af8dc.function.get_machine_status', 'capability_separate_user_roles_e876dcda.function.create_resident_account', 'capability_separate_user_roles_e876dcda.function.create_admin_account', 'capability_separate_user_roles_e876dcda.function.get_current_user', 'capability_add_and_remove_machines_e6daa139.function.create_machine', 'capability_add_and_remove_machines_e6daa139.function.list_machines', 'capability_add_and_remove_machines_e6daa139.function.delete_machine', 'capability_add_and_remove_machines_e6daa139.function.get_machine', 'capability_building_code_or_email_join_85677965.function.join_building_by_code', 'capability_building_code_or_email_join_85677965.function.join_building_by_email', 'capability_building_code_or_email_join_85677965.function.get_user_memberships', 'capability_qr_code_machine_claiming_a1e10606.function.claim_machine_by_qr', 'capability_start_timed_laundry_session_f115b2e6.function.start_session', 'capability_start_timed_laundry_session_f115b2e6.function.get_session', 'capability_start_timed_laundry_session_f115b2e6.function.get_active_session_by_machine', 'capability_start_timed_laundry_session_f115b2e6.function.get_user_active_session', 'capability_start_timed_laundry_session_f115b2e6.function.end_session', 'capability_start_session_button_271c7167.function.start_session', 'capability_start_session_button_271c7167.function.get_session', 'capability_start_session_button_271c7167.function.get_machine_active_session', 'capability_notification_when_wash_nearly_finished_a72b87c1.function.register_device_token', 'capability_notification_when_wash_nearly_finished_a72b87c1.function.schedule_notification_check', 'capability_notification_when_wash_nearly_finished_a72b87c1.function.get_notification_by_session', 'capability_notification_when_wash_nearly_finished_a72b87c1.function.update_notification_delivery_status', 'capability_end_session_button_342bee96.function.end_session')
+    assert len(expected) == 27

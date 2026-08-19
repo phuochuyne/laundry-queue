@@ -1,0 +1,190 @@
+{
+  "normalizations": {
+    "legacy_tailwind_runtime_removed": []
+  },
+  "project_slug": "laundryqueue",
+  "route_collisions": [],
+  "runtime_verification": {
+    "errors": [
+      "frontend_application_boot_failed"
+    ],
+    "valid": false
+  },
+  "schema_version": "frontend-package-manifest-v3",
+  "screen_routes": [
+    {
+      "feature_id": "capability_view_machine_status_589af8dc",
+      "path": "frontend/features/view_machine_status/machine_list.html",
+      "route": "/buildings/{building_id}/machines",
+      "screen_id": "capability_view_machine_status_589af8dc.screen.machine_list"
+    },
+    {
+      "feature_id": "capability_view_machine_status_589af8dc",
+      "path": "frontend/features/view_machine_status/machine_detail.html",
+      "route": "/machines/{machine_id}",
+      "screen_id": "capability_view_machine_status_589af8dc.screen.machine_detail"
+    },
+    {
+      "feature_id": "capability_separate_user_roles_e876dcda",
+      "path": "frontend/features/separate_user_roles/role_selection.html",
+      "route": "/signup",
+      "screen_id": "capability_separate_user_roles_e876dcda.screen.role_selection"
+    },
+    {
+      "feature_id": "capability_separate_user_roles_e876dcda",
+      "path": "frontend/features/separate_user_roles/resident_signup.html",
+      "route": "/signup/resident",
+      "screen_id": "capability_separate_user_roles_e876dcda.screen.resident_signup"
+    },
+    {
+      "feature_id": "capability_separate_user_roles_e876dcda",
+      "path": "frontend/features/separate_user_roles/manager_signup.html",
+      "route": "/signup/manager",
+      "screen_id": "capability_separate_user_roles_e876dcda.screen.manager_signup"
+    },
+    {
+      "feature_id": "capability_separate_user_roles_e876dcda",
+      "path": "frontend/features/separate_user_roles/login.html",
+      "route": "/login",
+      "screen_id": "capability_separate_user_roles_e876dcda.screen.login"
+    },
+    {
+      "feature_id": "capability_add_and_remove_machines_e6daa139",
+      "path": "frontend/features/add_and_remove_machines/machine_list.html",
+      "route": "/admin/machines",
+      "screen_id": "capability_add_and_remove_machines_e6daa139.screen.machine_list"
+    },
+    {
+      "feature_id": "capability_add_and_remove_machines_e6daa139",
+      "path": "frontend/features/add_and_remove_machines/add_machine.html",
+      "route": "/admin/machines/add",
+      "screen_id": "capability_add_and_remove_machines_e6daa139.screen.add_machine"
+    },
+    {
+      "feature_id": "capability_add_and_remove_machines_e6daa139",
+      "path": "frontend/features/add_and_remove_machines/machine_detail.html",
+      "route": "/admin/machines/{machine_id}",
+      "screen_id": "capability_add_and_remove_machines_e6daa139.screen.machine_detail"
+    },
+    {
+      "feature_id": "capability_building_code_or_email_join_85677965",
+      "path": "frontend/features/building_code_or_email_join/join_method_selection.html",
+      "route": "/join",
+      "screen_id": "capability_building_code_or_email_join_85677965.screen.join_method_selection"
+    },
+    {
+      "feature_id": "capability_building_code_or_email_join_85677965",
+      "path": "frontend/features/building_code_or_email_join/join_by_building_code.html",
+      "route": "/join/code",
+      "screen_id": "capability_building_code_or_email_join_85677965.screen.join_by_building_code"
+    },
+    {
+      "feature_id": "capability_building_code_or_email_join_85677965",
+      "path": "frontend/features/building_code_or_email_join/join_by_email.html",
+      "route": "/join/email",
+      "screen_id": "capability_building_code_or_email_join_85677965.screen.join_by_email"
+    },
+    {
+      "feature_id": "capability_building_code_or_email_join_85677965",
+      "path": "frontend/features/building_code_or_email_join/membership_confirmation.html",
+      "route": "/join/success",
+      "screen_id": "capability_building_code_or_email_join_85677965.screen.membership_confirmation"
+    },
+    {
+      "feature_id": "capability_building_code_or_email_join_85677965",
+      "path": "frontend/features/building_code_or_email_join/my_memberships.html",
+      "route": "/memberships",
+      "screen_id": "capability_building_code_or_email_join_85677965.screen.my_memberships"
+    },
+    {
+      "feature_id": "capability_qr_code_machine_claiming_a1e10606",
+      "path": "frontend/features/qr_code_machine_claiming/qr_code_scanner.html",
+      "route": "/scan-machine",
+      "screen_id": "capability_qr_code_machine_claiming_a1e10606.screen.qr_scanner"
+    },
+    {
+      "feature_id": "capability_qr_code_machine_claiming_a1e10606",
+      "path": "frontend/features/qr_code_machine_claiming/claim_confirmation.html",
+      "route": "/claim-confirmation",
+      "screen_id": "capability_qr_code_machine_claiming_a1e10606.screen.claim_confirmation"
+    },
+    {
+      "feature_id": "capability_qr_code_machine_claiming_a1e10606",
+      "path": "frontend/features/qr_code_machine_claiming/claim_error.html",
+      "route": "/claim-error",
+      "screen_id": "capability_qr_code_machine_claiming_a1e10606.screen.claim_error"
+    },
+    {
+      "feature_id": "capability_start_timed_laundry_session_f115b2e6",
+      "path": "frontend/features/start_timed_laundry_session/start_session.html",
+      "route": "/start-session",
+      "screen_id": "capability_start_timed_laundry_session_f115b2e6.screen.start_session"
+    },
+    {
+      "feature_id": "capability_start_timed_laundry_session_f115b2e6",
+      "path": "frontend/features/start_timed_laundry_session/active_session.html",
+      "route": "/active-session",
+      "screen_id": "capability_start_timed_laundry_session_f115b2e6.screen.active_session"
+    },
+    {
+      "feature_id": "capability_start_session_button_271c7167",
+      "path": "frontend/features/start_session_button/start_session_confirmation.html",
+      "route": "/machine/:machine_id/start-session",
+      "screen_id": "capability_start_session_button_271c7167.screen.start_session_confirmation"
+    },
+    {
+      "feature_id": "capability_start_session_button_271c7167",
+      "path": "frontend/features/start_session_button/active_session.html",
+      "route": "/session/:session_id",
+      "screen_id": "capability_start_session_button_271c7167.screen.active_session"
+    },
+    {
+      "feature_id": "capability_notification_when_wash_nearly_finished_a72b87c1",
+      "path": "frontend/features/notification_when_wash_nearly_finished/notification_settings.html",
+      "route": "/notifications/settings",
+      "screen_id": "capability_notification_when_wash_nearly_finished_a72b87c1.screen.notification_settings"
+    },
+    {
+      "feature_id": "capability_notification_when_wash_nearly_finished_a72b87c1",
+      "path": "frontend/features/notification_when_wash_nearly_finished/push_notification.html",
+      "route": "/notifications/push",
+      "screen_id": "capability_notification_when_wash_nearly_finished_a72b87c1.screen.notification_received"
+    },
+    {
+      "feature_id": "capability_notification_when_wash_nearly_finished_a72b87c1",
+      "path": "frontend/features/notification_when_wash_nearly_finished/active_session_view.html",
+      "route": "/session/{session_id}",
+      "screen_id": "capability_notification_when_wash_nearly_finished_a72b87c1.screen.active_session_view"
+    },
+    {
+      "feature_id": "capability_end_session_button_342bee96",
+      "path": "frontend/features/end_session_button/active_session.html",
+      "route": "/session/active",
+      "screen_id": "capability_end_session_button_342bee96.screen.active_session"
+    },
+    {
+      "feature_id": "capability_end_session_button_342bee96",
+      "path": "frontend/features/end_session_button/session_ended_confirmation.html",
+      "route": "/session/ended",
+      "screen_id": "capability_end_session_button_342bee96.screen.session_ended_confirmation"
+    }
+  ],
+  "source": {
+    "architecture_workspace_id": "137249a6-8684-436d-8ed1-265b662fabd6",
+    "backend_package_hash": "d64b63a363be9b0c2bc498f6356314c8769337943a6ecc3bbb77a421494db225",
+    "backend_package_id": "4367d8e1-79fc-41d7-bd63-608d54b2597e",
+    "backend_workspace_id": "53b11d52-c9a9-4fb3-887f-a36b1ab1d5ac",
+    "feature_hashes": {
+      "capability_add_and_remove_machines_e6daa139": "709a2b4df191dd78c15ac5c4ed5f87c08c06ed13a1633a522d695f101adfb8be",
+      "capability_building_code_or_email_join_85677965": "4b9b75f9556c3680ce71d9501ccc8d37523723888effd577c315419691c7dbfd",
+      "capability_end_session_button_342bee96": "1e94dfeda984838e827fe3deb94cf92ad77dcb4abdfaf46c73332bee340d92c2",
+      "capability_notification_when_wash_nearly_finished_a72b87c1": "00df866cc3dc99dbf99bcf429ab489cb017622d448a0d6fd8b86f0cbdbb390bc",
+      "capability_qr_code_machine_claiming_a1e10606": "e76289d3f31a33ce53dadb9878d261548d0714cee4ac9cecb53246425c75a297",
+      "capability_separate_user_roles_e876dcda": "ec62e5ef44dfb23b2fd9e0fc351b7c75a7f81635d82e2584998bafa4b64a63ff",
+      "capability_start_session_button_271c7167": "e38967227915b1e16b5a1445a7313f848812a16657b5ff8acffa481ee1ad9d95",
+      "capability_start_timed_laundry_session_f115b2e6": "99b27015d5c3dfe0a193a0dbebccf17677b68d7038be22d04bfec4633df1ab1b",
+      "capability_view_machine_status_589af8dc": "7684ab7c9ddc20d8e95ae935b57e3b10149f15675fbb3ea3864b6adc04f0c740"
+    },
+    "foundation_hash": "a8e3d95b95651d240e41c27462dbe6c89cd5f18253dea14ae66170ae6e63bc23"
+  }
+}
