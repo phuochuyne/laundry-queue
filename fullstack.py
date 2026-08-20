@@ -57,7 +57,7 @@ def create_app(testing=False):
             view_func=serve_screen,
             methods=["GET"],
         )
-    @app.get('/')
+    @app.get("/")
     def serve_custom_home():
-        return send_file(_project_file("templates/index.html"), mimetype="text/html")
+        return render_template("index.html")
     return app
