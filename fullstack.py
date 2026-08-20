@@ -3,7 +3,7 @@
 import re
 from pathlib import Path
 
-from flask import abort, send_file
+from flask import abort, app, send_file, render_template
 from backend import create_app as create_backend_app
 
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -57,4 +57,7 @@ def create_app(testing=False):
             view_func=serve_screen,
             methods=["GET"],
         )
+    @app.get('/')
+    def home():
+        return render_template('index.html')
     return app
