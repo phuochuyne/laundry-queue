@@ -59,5 +59,5 @@ def create_app(testing=False):
         )
     @app.get('/')
     def serve_custom_home():
-        return render_template('index.html')
+        return send_file(_project_file("templates/index.html"), mimetype="text/html")
     return app
