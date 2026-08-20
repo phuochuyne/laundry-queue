@@ -58,6 +58,6 @@ def create_app(testing=False):
             methods=["GET"],
         )
     @app.get('/')
-    def home():
+    def serve_custom_home():
         return render_template('index.html')
     return app
